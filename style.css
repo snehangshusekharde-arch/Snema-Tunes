@@ -1,0 +1,66 @@
+/* ===== General Body & Fonts ===== */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to bottom, #a8dadc, #457b9d);
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 90px; /* ✅ Ensures content stays above nav */
+}
+
+/* ===== Header ===== */
+header {
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  margin: 0;
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1.2em;
+}
+
+/* ===== Genres Section ===== */
+.genres-section {
+  flex: 1;
+  padding: 20px;
+  margin-bottom: 100px; /* ✅ Extra space for safety */
+}
+
+/* ===== Bottom Navigation ===== */
+nav {
+  position: fixed;      /* ✅ Keeps nav at bottom */
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #111;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 0;
+  z-index: 999;
+  border-top: 1px solid #333;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  font-size: 0.9em;
+  flex-grow: 1;
+}
+
+nav a i {
+  display: block;
+  font-size: 1.3em;
+  margin-bottom: 4px;
+}
+
+nav a.active {
+  color: #a8dadc; /* highlight current */
+}
